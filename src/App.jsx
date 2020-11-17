@@ -7,8 +7,8 @@ import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui
 
 import AppState from './state/AppState';
 
-import AppNavigation from "./components/static/Navigation";
-import AppContainer from "./components/static/AppContainer";
+import AppNavigation from "./components/Navigation";
+import AppContainer from "./components/AppContainer";
 
 function App() {
 

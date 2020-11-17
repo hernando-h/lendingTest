@@ -1,9 +1,16 @@
+/**
+ * Application State, using react context hook
+ * @author hernando.shaolin@gmail.com
+ * @version 2020-11-16
+ */
 import React from 'react';
 
 URL = 'https://5fac266a03a60500167e797a.mockapi.io/api/v1/';
 
+
 export const AppContext = React.createContext();
 
+/** This Assign the data for state object, through dispatch function. */
 const AppReducer = (state, { type, payload }) => {
 
     switch (type) {
@@ -31,6 +38,7 @@ const AppReducer = (state, { type, payload }) => {
 
 }
 
+/** This be wrap the root Component, contains the logic behaviour for the application state. */
 const AppState = ({ children }) => {
 
     const initialState = {
@@ -40,6 +48,7 @@ const AppState = ({ children }) => {
         selectedLoan: null,
         loading: true
     }
+
     const [state, dispatch] = React.useReducer(AppReducer, initialState);
 
     const getLoans = (payload) => {

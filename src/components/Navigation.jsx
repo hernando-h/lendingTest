@@ -1,7 +1,13 @@
+/**
+ * Module that expose static GUI navigation
+ * @author hernando.shaolin@gmail.com
+ * @version 2020-11-16
+ */
+
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import { Container, Fab, Grid, AppBar, Toolbar, InputBase, SvgIcon, Typography } from "@material-ui/core";
 
-import logo from '../../assets/logo.svg';
+import logo from '../assets/logo.svg';
 
 const theme = createMuiTheme();
 const useStyles = makeStyles({
